@@ -2,9 +2,15 @@ package com.softwareinstitute.training.kptsang;
 
 public class Movie extends Disc {
 
-    private String Director;
+    private String director;
     private int runtime;
 
+
+    public Movie( String name, int NoOfDiscs , String director, int runtime) {
+        super(name, NoOfDiscs);
+        this.director = director;
+        this.runtime = runtime;
+    }
     //methods
 
     public void runtime( int runtimeLength){
@@ -13,5 +19,15 @@ public class Movie extends Disc {
     public void Director(String filmDirector){
         System.out.println("This film was directed by "+ filmDirector);
     }
+    public void setDirector(String director){this.director = director;}
+    public String getDirector(){return director;}
 
-}
+    public void setRuntime(int runtime){
+        this.runtime = runtime;
+    }
+    public int getRuntime(){
+        return runtime;
+    }
+
+
+    }

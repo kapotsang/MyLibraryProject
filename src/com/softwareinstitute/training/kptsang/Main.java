@@ -4,16 +4,19 @@ public class Main{
 
     public static void main(String[] args){
 
-    Fiction fiction = new Fiction();
-    fiction.setName("Nineteen Eighty Four");
-    fiction.available();
-    fiction.Author("George Orwell");
-    fiction.Pages(328);
-    fiction.genre("Dystopian");
-    Movie movie = new Movie();
-    movie.setName("Kill Bill");
-    movie.available();
-    movie.Director("Quentin Tarantino");
+        Fiction fiction = new Fiction("Nineteen Eighty Four", "George Orwell", 328);
+        System.out.println("Title: "+ fiction.getName() +", written by " + fiction.getAuthor()+", "+fiction.getPages()+" pages");
+
+
+        NonFiction nonfiction = new NonFiction("LEGO Star Wars Visual Dictionary", "DK", 160);
+        System.out.println("Title: "+ nonfiction.getName() +", written by "+ nonfiction.getAuthor()+ ", " + fiction.getPages()+ " pages");
+
+        Movie movie = new Movie("Kill Bill", 2, "Quentin Tarantino", 215);
+        System.out.println("Title: "+ movie.getName()+", "+ movie.getNoOfDiscs()+" disc(s), directed by "+movie.getDirector()+", runs for "+movie.getRuntime()+ " minutes");
+
+        TVShow tvshow = new TVShow("Seinfeld", 8,180);
+        System.out.println("Title: "+tvshow.getName()+", "+tvshow.getNoOfDiscs()+" disc boxset, "+tvshow.getNumberOfEpisodes1()+ " episodes");
+
 
 
 
