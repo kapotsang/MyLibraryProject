@@ -15,8 +15,6 @@ public abstract class Book extends Library {
         this.Author = Author;
         this.pages = pages;
     }
-
-
     public void setAuthor(String name) {
         this.Author = Author;
     }
