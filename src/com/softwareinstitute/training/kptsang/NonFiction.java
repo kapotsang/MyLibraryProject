@@ -2,19 +2,20 @@ package com.softwareinstitute.training.kptsang;
 
 public class NonFiction extends Book{
 
-        private String Topic;
+        private String topic;
         public int pages;
 
-        public NonFiction(String name, String Author, int pages) {
+        public NonFiction(String name, String Author, int pages, String topic) {
                 super(name, Author, pages);
+                this.topic = topic;
         }
 
-        // public NonFiction(String name) {
-         //       super(name);
-       // }
 
-        public void Topic(String topicArea){
-                System.out.println("This book's topic is "+topicArea );
+
+        public void setTopic(String topic){
+                this.topic = topic;
         }
-
+        public String getTopic(){
+                return topic;
+        }
 }

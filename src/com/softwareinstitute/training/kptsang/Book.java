@@ -17,16 +17,6 @@ public abstract class Book extends Library {
     }
 
 
-    //Methods
-
-    //public void Pages(int pageCount) {
-     //   System.out.println("This book contains " + pageCount + " pages");
-    //}
-
-    //public void Author(String authorName){
-    //   System.out.println("This book was written by: "+ authorName);
-    //}
-
     public void setAuthor(String name) {
         this.Author = Author;
     }
