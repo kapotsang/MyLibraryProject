@@ -1,5 +1,5 @@
 package com.softwareinstitute.training.kptsang;
-
+ //interface? implements?
 public class Fiction extends Book{
 
 //attributes
@@ -11,6 +11,7 @@ public class Fiction extends Book{
         this.genre = genre;
     }
 
+    //methods
     public void setGenre(String genre){
         this.genre = genre;
     }

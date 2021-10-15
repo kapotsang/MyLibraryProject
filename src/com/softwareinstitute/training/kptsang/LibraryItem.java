@@ -1,11 +1,11 @@
 package com.softwareinstitute.training.kptsang;
+public class LibraryItem {
 
-public abstract class Library {
-
-    private String name;
-    private int releaseYear;
-
-    public Library(String name){
+//abstract?
+        private String name;
+        private int releaseYear;
+    
+    public LibraryItem(String name){
         this.name = name;
     }
     //public void available(){

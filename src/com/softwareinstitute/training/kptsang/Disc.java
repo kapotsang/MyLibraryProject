@@ -1,7 +1,7 @@
 package com.softwareinstitute.training.kptsang;
 
-public abstract class Disc extends Library{
-
+public class Disc extends LibraryItem {
+//implements? had to remove the abstract
     private int NoOfDiscs;
 
     public Disc( String name, int NoOfDiscs) {

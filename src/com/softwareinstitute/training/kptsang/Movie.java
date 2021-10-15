@@ -18,6 +18,8 @@ public class Movie extends Disc {
     ////public void Director(String filmDirector){
     ///  System.out.println("This film was directed by "+ filmDirector);
     //}
+
+    //methods
     public void setDirector(String director){this.director = director;}
     public String getDirector(){return director;}
 

@@ -16,6 +16,8 @@ public class Main{
         TVShow tvshow = new TVShow("Seinfeld", 8,180);
         System.out.println("Title: "+tvshow.getName()+", "+tvshow.getNoOfDiscs()+" disc boxset, "+tvshow.getNumberOfEpisodes1()+ " episodes");
 
+        //System.out.println(movie);
+
     }
 
 }

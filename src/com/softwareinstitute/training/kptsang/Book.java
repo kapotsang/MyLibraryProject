@@ -1,7 +1,9 @@
 package com.softwareinstitute.training.kptsang;
 
 
-public abstract class Book extends Library {
+public class Book extends LibraryItem {
+    //abstract?
+
 
     //Attributes
 
@@ -15,7 +17,7 @@ public abstract class Book extends Library {
         this.Author = Author;
         this.pages = pages;
     }
-    public void setAuthor(String name) {
+    public void setAuthor(String Author) {
         this.Author = Author;
     }
     public String getAuthor() {

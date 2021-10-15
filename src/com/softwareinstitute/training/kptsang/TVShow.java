@@ -9,9 +9,9 @@ public class TVShow extends Disc{
         this.numberOfEpisodes = numberOfEpisodes;
     }
 
-    public void numberOfEpisodes(int seriesLength){
-        System.out.println("This series is "+seriesLength+" episodes long");
-    }
+    //public void numberOfEpisodes(int seriesLength){
+    //    System.out.println("This series is "+seriesLength+" episodes long");
+    //}
 
     public void setNumberOfEpisodes1(int NumberOfEpisodes){
         this.numberOfEpisodes = numberOfEpisodes;

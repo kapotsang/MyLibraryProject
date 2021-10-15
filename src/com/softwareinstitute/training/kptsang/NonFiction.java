@@ -10,6 +10,7 @@ public class NonFiction extends Book{
                 this.topic = topic;
         }
 
+        //methods
         public void setTopic(String topic){
                 this.topic = topic;
         }
