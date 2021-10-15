@@ -25,7 +25,7 @@ public class LibraryTest {
     }
     @Test
     public void testNumberOfEpisodes1(){
-        TVShow testTVShow = new TVShow("Seinfeld", 8, 180);
+        TVShow testTVShow = new TVShow("Seinfeld", 8, 180, "Jerry Seinfeld");
         assertEquals("This isn't the right episode count", 180, testTVShow.getNumberOfEpisodes1());
     }
     @Test
@@ -54,7 +54,11 @@ public class LibraryTest {
     public void testReleaseDate(){
         Movie testMovie = new Movie("Hereditary", 1, "Ari Aster", 127, 2018);
         assertEquals("This isn't the release date", 2018, testMovie.getReleaseYear());
-
+    }
+    @Test
+    public void testStarring(){
+        TVShow testTVShow = new TVShow("Seinfeld", 8, 180, "Jerry Seinfeld");
+        assertEquals("This person isn't in this series", "Jerry Seinfeld", testTVShow.getStarring());
     }
 
     }

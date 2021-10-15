@@ -9,7 +9,7 @@ public class Main{
         Fiction fiction = new Fiction("Nineteen Eighty Four", "George Orwell", 328, "Dystopian");
         System.out.println("Title: "+ fiction.getName() +", written by " + fiction.getAuthor()+", "+fiction.getPages()+" pages, and this book is "+ fiction.getGenre());
 
-        Fiction fiction1 = new Fiction("Call of Cthulu", "HP Lovecraft", 420, "horror");
+        Fiction fiction1 = new Fiction("Call of Cthulu", "HP Lovecraft", 420, "Cosmic Horror");
         System.out.println("Title: "+ fiction1.getName() +", written by " + fiction1.getAuthor()+", "+fiction1.getPages()+" pages, and this book is "+ fiction1.getGenre());
 
         NonFiction nonfiction = new NonFiction("LEGO Star Wars Visual Dictionary", "DK", 160, "Lego");
@@ -21,8 +21,8 @@ public class Main{
         Movie movie1 = new Movie("The Lighthouse", 1, "Robert Eggers", 110, 2019);
         System.out.println("Title: "+ movie1.getName()+", released "+ movie1.getReleaseYear()+", directed by "+movie1.getDirector()+", "+ movie1.getNoOfDiscs()+" disc(s), runs for "+movie1.getRuntime()+ " minutes");
 
-        TVShow tvshow = new TVShow("Seinfeld", 8,180);
-        System.out.println("Title: "+tvshow.getName()+", "+tvshow.getNoOfDiscs()+" disc boxset, "+tvshow.getNumberOfEpisodes1()+ " episodes");
+        TVShow tvshow = new TVShow("Seinfeld", 8,180, "Jerry Seinfeld");
+        System.out.println("Title: "+tvshow.getName()+", starring "+tvshow.getStarring()+", "+tvshow.getNoOfDiscs()+" disc boxset, "+tvshow.getNumberOfEpisodes1()+ " episodes");
 
         //System.out.println(movie);
 
