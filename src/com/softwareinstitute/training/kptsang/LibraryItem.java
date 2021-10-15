@@ -1,19 +1,22 @@
 package com.softwareinstitute.training.kptsang;
 
-//interface LibraryItem {
     public class LibraryItem{
+
+        //attributes
         private String name;
         private int releaseYear;
 
-    public LibraryItem(String name){
+        //constructor
+        public LibraryItem(String name){
         this.name = name;
     }
 
-    public void setName(String name) {
+        //methods
+        public void setName(String name) {
         this.name = name;
         System.out.println("This entry's name is "+name);
     }
-    public String getName(){
+        public String getName(){
         return name;
     }
 

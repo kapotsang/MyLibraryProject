@@ -2,7 +2,6 @@ package com.softwareinstitute.training.kptsang;
 
 public class Fiction extends Book implements Availability {
 
-//attributes
     private String genre;
     public int pages;
 
@@ -11,7 +10,6 @@ public class Fiction extends Book implements Availability {
         this.genre = genre;
     }
 
-    //methods
     public void setGenre(String genre){
         this.genre = genre;
     }

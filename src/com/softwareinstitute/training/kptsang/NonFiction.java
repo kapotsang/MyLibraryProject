@@ -10,7 +10,6 @@ public class NonFiction extends Book implements Availability{
                 this.topic = topic;
         }
 
-        //methods
         public void setTopic(String topic){
                 this.topic = topic;
         }

@@ -4,22 +4,16 @@ public class Movie extends Disc implements Availability {
 
     private String director;
     private int runtime;
+    private int releaseYear;
 
 
-    public Movie( String name, int NoOfDiscs , String director, int runtime) {
+    public Movie( String name, int NoOfDiscs , String director, int runtime, int releaseYear) {
         super(name, NoOfDiscs);
         this.director = director;
         this.runtime = runtime;
+        this.releaseYear = releaseYear;
     }
 
-    // public void runtime( int runtimeLength){
-    //  System.out.println("This is " +runtimeLength+ "minutes long");
-    //}
-    ////public void Director(String filmDirector){
-    ///  System.out.println("This film was directed by "+ filmDirector);
-    //}
-
-    //methods
     public void setDirector(String director){this.director = director;}
     public String getDirector(){return director;}
 
@@ -30,6 +24,13 @@ public class Movie extends Disc implements Availability {
         return runtime;
     }
 
+    public void setReleaseYear(int releaseYear){
+        this.releaseYear=releaseYear;
+    }
+
+    public int getReleaseYear() {
+        return releaseYear;
+    }
 
     @Override
     public void borrow() {

@@ -1,8 +1,6 @@
 package com.softwareinstitute.training.kptsang;
-
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
-
 public class LibraryTest {
 
     @Test
@@ -17,12 +15,12 @@ public class LibraryTest {
     }
     @Test
     public void testDirectorMethod(){
-        Movie testMovie = new Movie("Kill Bill", 2, "Quentin Tarantino",215);
+        Movie testMovie = new Movie("Kill Bill", 2, "Quentin Tarantino",215, 2004);
         assertEquals("This isn't the right director", "Quentin Tarantino", testMovie.getDirector());
     }
     @Test
     public void testRuntimeMethod(){
-        Movie testMovie = new Movie("Kill Bill", 2, "Quentin Tarantino",215);
+        Movie testMovie = new Movie("Kill Bill", 2, "Quentin Tarantino",215,2004);
         assertEquals("This runtime is wrong", 215, testMovie.getRuntime());
     }
     @Test
@@ -32,19 +30,19 @@ public class LibraryTest {
     }
     @Test
     public void testAuthor(){
-        Book testBook = new Fiction("Of Mice and Men", "John Steinbeck", 107, "period");
-        assertEquals("This isn't the right author", "John Steinbeck", testBook.getAuthor());
+        Fiction testFiction = new Fiction("Of Mice and Men", "John Steinbeck", 107, "period");
+        assertEquals("This isn't the right author", "John Steinbeck", testFiction.getAuthor());
     }
     @Test
     public void testName(){
-        Book testBook = new Book("Of Mice and Men", "John Steinbeck", 107);
-        assertEquals("This isn't the right title", "Of Mice and Men", testBook.getName());
+        Fiction testFiction = new Fiction("Of Mice and Men", "John Steinbeck", 107, "tragedy");
+        assertEquals("This isn't the right title", "Of Mice and Men", testFiction.getName());
 
         }
     @Test
     public void testPages(){
-        Book testPages = new Book("Of Mice and Men", "John Steinbeck", 107);
-        assertEquals("This isn't the correct page count", 107, testPages.getPages());
+        Fiction testFiction = new Fiction("Of Mice and Men", "John Steinbeck", 107, "tragedy");
+        assertEquals("This isn't the correct page count", 107, testFiction.getPages());
     }
     @Test
     public void testNoOfDiscs(){
@@ -52,6 +50,12 @@ public class LibraryTest {
         assertEquals("This is the wrong number of discs", 4, testDisc.getNoOfDiscs());
     }
 
+    @Test
+    public void testReleaseDate(){
+        Movie testMovie = new Movie("Hereditary", 1, "Ari Aster", 127, 2018);
+        assertEquals("This isn't the release date", 2018, testMovie.getReleaseYear());
+
+    }
 
     }
 

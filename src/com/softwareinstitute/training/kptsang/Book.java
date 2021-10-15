@@ -1,15 +1,9 @@
 package com.softwareinstitute.training.kptsang;
 
-
 public class Book extends LibraryItem {
-    //abstract?
-
-    //Attributes
 
     public int pages;
     private String Author;
-
-    //constructors
 
     public Book(String name, String Author, int pages) {
         super(name);
@@ -17,7 +11,6 @@ public class Book extends LibraryItem {
         this.pages = pages;
     }
 
-    //methods
     public void setAuthor(String Author) {
         this.Author = Author;
     }
