@@ -32,7 +32,7 @@ public class LibraryTest {
     }
     @Test
     public void testAuthor(){
-        Book testBook = new Book("Of Mice and Men", "John Steinbeck", 107);
+        Book testBook = new Fiction("Of Mice and Men", "John Steinbeck", 107, "period");
         assertEquals("This isn't the right author", "John Steinbeck", testBook.getAuthor());
     }
     @Test

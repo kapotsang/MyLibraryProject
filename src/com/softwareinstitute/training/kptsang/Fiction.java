@@ -1,6 +1,6 @@
 package com.softwareinstitute.training.kptsang;
- //interface? implements?
-public class Fiction extends Book{
+
+public class Fiction extends Book implements Availability {
 
 //attributes
     private String genre;
@@ -19,4 +19,8 @@ public class Fiction extends Book{
         return genre;
     }
 
-}
+     @Override
+     public void borrow() {
+
+     }
+ }

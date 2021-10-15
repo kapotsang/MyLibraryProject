@@ -1,6 +1,6 @@
 package com.softwareinstitute.training.kptsang;
 
-public class TVShow extends Disc{
+public class TVShow extends Disc implements Availability{
 
     public int numberOfEpisodes;
 
@@ -18,5 +18,10 @@ public class TVShow extends Disc{
     }
     public int getNumberOfEpisodes1(){
         return numberOfEpisodes;
+    }
+
+    @Override
+    public void borrow() {
+
     }
 }

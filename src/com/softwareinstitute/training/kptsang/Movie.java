@@ -1,6 +1,6 @@
 package com.softwareinstitute.training.kptsang;
 
-public class Movie extends Disc {
+public class Movie extends Disc implements Availability {
 
     private String director;
     private int runtime;
@@ -31,4 +31,8 @@ public class Movie extends Disc {
     }
 
 
+    @Override
+    public void borrow() {
+
     }
+}

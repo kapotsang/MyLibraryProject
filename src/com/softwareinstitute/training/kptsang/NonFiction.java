@@ -1,6 +1,6 @@
 package com.softwareinstitute.training.kptsang;
 
-public class NonFiction extends Book{
+public class NonFiction extends Book implements Availability{
 
         private String topic;
         private int pages;
@@ -16,5 +16,10 @@ public class NonFiction extends Book{
         }
         public String getTopic(){
                 return topic;
+        }
+
+        @Override
+        public void borrow() {
+
         }
 }
